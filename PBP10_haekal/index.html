@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBGIS  Kabupaten Bengkayang, Provinsi Kalimantan Barat</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <link rel="stylesheet" href="https://ppete2.github.io/Leaflet.PolylineMeasure/Leaflet.PolylineMeasure.css" />
+    <link rel="stylesheet" href="leaflet-compass.css"> 
+    <link rel="stylesheet" href="L.Control.BetterScale.css"> 
+    <link rel="stylesheet" href="L.Control.ZoomPanel.css">
+    <link rel="stylesheet" href="Control.MiniMap.css">
+    <!--Plugin Pencaharian Lokasi Berdasarkan definisi-->
+    <link rel="stylesheet" href="src/leaflet-search.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Add Center Control Plugin-->
+     <link rel="stylesheet" href="src/leaflet-control-topcenter.css"/>
+    
+    <!-- Plugin Control Panning -->
+    <link rel="stylesheet" href="src/L.Control.Pan.css"/>
+
+    <!-- Plugin Zoom Slider -->
+    <link rel="stylesheet" href="src/L.Control.Zoomslider.css"/>
+
+    <!-- Plugin Cursor Mouse Position -->
+    <link rel="stylesheet" href="src/L.Control.MousePosition.css"/>
+
+    <!-- Credits Plugin -->
+    <link rel="stylesheet" href="src/leaflet-control-credits.css"/>
+
+    <!-- Drawing and editing tool Plugin -->
+   <link rel="stylesheet" href="src/leaflet.draw.css"/>
+
+   <!-- Fullscreen Mode Plugin -->
+   <link rel="stylesheet" href="Control.FullScreen.css" />
+   <!-- Skala angka Plugin -->
+   <link rel="stylesheet" href="leaflet.scalefactor.min.css"/>
+
+    <!-- Easy Button Plugin -->
+    <link rel="stylesheet" href="src/easy-button.css"/>
+   
+    <!-- Sidebar Plugin -->
+    <link rel="stylesheet" href="src/L.Control.Sidebar.css"/>
+ 
+    
+
+
+</head>
+<body>
+
+<h2>
+    <b> Peta Web Lokasi Populer di Kabupaten Bengkayang</b>
+    <mark><small>(Versi 10.2024)</small></mark>    
+</h2>
+    <div id="sidebar_div" >
+        <h1 style="padding-top:0%;" align="center">Kabupaten Bengkayang</h1>
+        <div align="center"><img src='bengkayang.png' style="height: 200px; width: 350px;" alt="Kabupaten Bengkayang"></div>
+        Kabupaten Bengkayang adalah salah satu kabupaten yang terletak di Provinsi Kalimantan Barat, Indonesia. Kabupaten ini berbatasan langsung dengan negara Malaysia di sebelah utara, menjadikannya salah satu wilayah yang memiliki peran strategis dalam hubungan internasional, terutama dalam konteks perdagangan dan pengelolaan perbatasan. Kabupaten ini memiliki ibukota yang terletak di Kota Bengkayang.
+        Wilayah Kabupaten Bengkayang dikenal memiliki bentang alam yang sangat beragam, terdiri dari dataran rendah, perbukitan, hingga pegunungan. Salah satu ciri khasnya adalah keindahan alam yang alami, seperti pegunungan, air terjun, dan hutan tropis yang lebat. Kawasan ini juga menjadi rumah bagi berbagai flora dan fauna khas Kalimantan, menjadikannya kaya akan potensi keanekaragaman hayati. Selain itu, kabupaten ini juga memiliki beberapa sungai besar yang menjadi sumber kehidupan bagi masyarakat, baik sebagai sarana transportasi, irigasi, maupun pemenuhan kebutuhan air sehari-hari.
+        Penduduk Bengkayang terdiri dari beragam suku, dengan mayoritas berasal dari suku Dayak, Melayu, dan Tionghoa, meskipun ada pula kelompok etnis lainnya. Keberagaman ini tercermin dalam tradisi, budaya, dan bahasa lokal yang digunakan. Salah satu tradisi yang khas adalah budaya Dayak yang ditandai dengan ritual adat, seni ukir, dan kehidupan yang erat kaitannya dengan alam. Keragaman ini juga memperkaya kuliner lokal yang banyak dipengaruhi oleh tradisi masing-masing suku.
+
+    Kabupaten Bengkayang memiliki sektor ekonomi yang didominasi oleh pertanian, perkebunan, dan kehutanan. Komoditas utama yang dihasilkan meliputi padi, karet, dan kelapa sawit. Selain itu, kawasan ini juga memiliki potensi pariwisata yang besar, terutama dengan adanya berbagai destinasi alam seperti Gunung Bawang, Air Terjun Riam Merasap, dan Pantai Pasir Panjang. Beberapa destinasi ini mulai dikembangkan untuk menarik wisatawan lokal dan internasional, sekaligus menjadi sumber pendapatan tambahan bagi masyarakat.
+
+     Namun, seperti banyak wilayah lain di Indonesia, Kabupaten Bengkayang juga menghadapi berbagai tantangan. Salah satu tantangan utamanya adalah aksesibilitas. Meski beberapa wilayah dapat diakses dengan kendaraan darat, ada daerah-daerah terpencil yang masih sulit dijangkau karena kondisi infrastruktur yang belum memadai. Selain itu, sebagai daerah perbatasan, kabupaten ini juga menghadapi tantangan dalam menjaga kedaulatan dan mengelola hubungan sosial-ekonomi dengan wilayah tetangga di Malaysia.
+    Pemerintah Kabupaten Bengkayang terus berupaya untuk meningkatkan pembangunan di berbagai sektor, termasuk infrastruktur, pendidikan, dan kesehatan. Mereka juga berusaha mendorong partisipasi masyarakat lokal dalam pengelolaan sumber daya alam yang berkelanjutan, sehingga potensi alam dan budaya yang dimiliki dapat dimanfaatkan tanpa merusak lingkungan. Kabupaten Bengkayang adalah contoh wilayah yang kaya akan potensi namun memerlukan perhatian lebih untuk mengatasi tantangan pembangunan di masa depan.
+    </div>
+    <div id="map"></div>
+    <div id="post-it" style="width:93%;height:45px; background-color: #ffffff">
+        <b>16 Lokasi yang bisa di cari:</b><br/>
+        <i><b>01 </b>Kantor Kecamatan Bengkayang</i> ● 
+        <i><b>02 </b>Kantor Kelurahan Sebalo</i> ● 
+        <i><b>03 </b>Kantor Kecamatan Teriak</i> ● 
+        <i><b>04 </b>Gunung Bawang Bengkawang</i> ● 
+        <i><b>05 </b>Lala Golden Bengkayang</i> ● 
+        <i><b>06 </b>SDN 09 Rangkang</i> ● 
+        <i><b>07 </b>Pangkalan Udara Harry Hadisoemantri</i> ● </br>
+        <i><b>08 </b>Gunung Upu</i> ● 
+        <i><b>09 </b>Kantor Kelurahan Bumi Emas</i> ● 
+        <i><b>10 </b>SDN 04 Bengkayang</i> ● 
+        <i><b>11 </b>SDN 03 Bengkayang</i> ● 
+        <i><b>12 </b>SDN 02 Bengkayang</i> ● 
+        <i><b>13 </b>Bukit Jamur Bengkayang</i>
+        <i><b>14 </b>Wisata Air Terjun Riam Budi</i> ●
+        <i><b>15 </b>Masjid Ilham Separong</i> ●
+        <i><b>16 </b>Air Terjun Riam Merasap</i> ●
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="https://ppete2.github.io/Leaflet.PolylineMeasure/Leaflet.PolylineMeasure.js"></script>
+    <script src="leaflet-compass.js"></script>
+    <script src="L.Control.BetterScale.js"></script>
+    <script src="Control.MiniMap.js"></script>
+    <script src="L.Control.ZoomPanel.js"></script>
+    <!--Plugin Pencaharian Lokasi Berdasarkan definisi-->
+    <script src="src/leaflet-search.js"></script>
+
+     <!-- Add Center Control Plugin-->
+     <script src="src/leaflet-control-topcenter.js"></script>
+    
+    <!-- Plugin Control Panning -->
+    <script src="src/L.Control.Pan.js"></script>
+    <script src="lib/leaflet-tilejson.js"></script>
+
+    <!-- Plugin Zoom Slider -->
+    <script src="src/L.Control.Zoomslider.js"></script>
+
+    <!-- Plugin Cursor Mouse Position -->
+    <script src="src/L.Control.MousePosition.js"></script>
+
+    <!-- Credits Plugin -->
+    <script src="src/leaflet-control-credits.js"></script>
+
+    <!-- Drawing and editing tool Plugin -->
+   <script src="src/Leaflet.draw.js"></script>
+   <script src="src/Leaflet.Draw.Event.js"></script>
+   <script src="src/Toolbar.js"></script>
+   <script src="src/Tooltip.js"></script>
+
+   <script src="src/ext/GeometryUtil.js"></script>
+   <script src="src/ext/LatLngUtil.js"></script>
+   <script src="src/ext/LineUtil.Intersect.js"></script>
+   <script src="src/ext/Polygon.Intersect.js"></script>
+   <script src="src/ext/Polyline.Intersect.js"></script>
+   <script src="src/ext/TouchEvents.js"></script>
+
+   <script src="src/draw/DrawToolbar.js"></script>
+   <script src="src/draw/handler/Draw.Feature.js"></script>
+   <script src="src/draw/handler/Draw.SimpleShape.js"></script>
+   <script src="src/draw/handler/Draw.Polyline.js"></script>
+   <script src="src/draw/handler/Draw.Marker.js"></script>
+   <script src="src/draw/handler/Draw.Circle.js"></script>
+   <script src="src/draw/handler/Draw.CircleMarker.js"></script>
+   <script src="src/draw/handler/Draw.Polygon.js"></script>
+   <script src="src/draw/handler/Draw.Rectangle.js"></script>
+
+   <script src="src/edit/EditToolbar.js"></script>
+   <script src="src/edit/handler/EditToolbar.Edit.js"></script>
+   <script src="src/edit/handler/EditToolbar.Delete.js"></script>
+
+   <script src="src/Control.Draw.js"></script>
+
+   <script src="src/edit/handler/Edit.Poly.js"></script>
+   <script src="src/edit/handler/Edit.SimpleShape.js"></script>
+   <script src="src/edit/handler/Edit.Rectangle.js"></script>
+   <script src="src/edit/handler/Edit.Marker.js"></script>
+   <script src="src/edit/handler/Edit.CircleMarker.js"></script>
+   <script src="src/edit/handler/Edit.Circle.js"></script>
+    <!-- Fullscreen Mode Plugin -->
+    <script src="Control.FullScreen.js"></script>
+    <!-- Skala angka Plugin -->
+   <script src="jquery.min.js"></script>
+   <script src="leaflet.scalefactor.min.js"></script>
+
+    <!-- Easy Button Plugin -->
+    <script src="src/easy-button.js"></script>
+   
+    <!-- Sidebar Plugin -->
+    <script src="src/L.Control.Sidebar.js"></script>
+  <!-- Worldminimap or inset map Plugin -->
+  <script src="src/Control.WorldMiniMap.js"></script>
+
+
+
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
