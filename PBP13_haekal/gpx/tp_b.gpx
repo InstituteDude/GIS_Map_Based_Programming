@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gpx
+ version="1.1"
+ creator="Global Mapper - http://www.globalmapper.com"
+ xmlns:globalmapper="https://www.bluemarblegeo.com/globalmapper"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://www.topografix.com/GPX/1/1"
+ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+ <metadata>
+ </metadata>
+<wpt lat="0.73" lon="108.88">
+ <ele>0</ele>
+ <name>Sungairaya</name>
+  ''
+ <sym>Ibukota Kecamatan</sym>
+</wpt>
+<wpt lat="0.66" lon="109.04">
+ <ele>0</ele>
+ <name>Capkala</name>
+  '
+ <sym>Ibukota Kecamatan</sym>
+</wpt>
+<wpt lat="0.76" lon="109.14">
+ <ele>0</ele>
+ <name>Monterado</name>
+  
+ <sym>Ibukota Kecamatan</sym>
+</wpt>
+<wpt lat="0.94" lon="109.48">
+ <ele>0</ele>
+ <name>Tigaberkat</name>
+  
+ <sym>Ibukota Kecamatan</sym>
+</wpt>
+<wpt lat="1.14" lon="109.69">
+ <ele>0</ele>
+ <name>Lembang</name>
+  
+ <sym>Ibukota Kecamatan</sym>
+</wpt>
+<wpt lat="0.88" lon="109.81">
+ <ele>0</ele>
+ <name>Sutisemarang</name>
+  
+ <sym>Ibukota Kecamatan</sym>
+</wpt>
+<wpt lat="0.58" lon="108.93">
+ <ele>0</ele>
+ <name>Sungaijaga A</name>
+  
+ <sym>Ibukota Kecamatan</sym>
+</wpt>
+<wpt lat="0.80" lon="109.19">
+ <ele>0</ele>
+ <name>Samalantan</name>
+  
+ <sym>Ibukota Kecamatan</sym>
+</wpt>
+<wpt lat="0.81" lon="109.38">
+ <ele>0</ele>
+ <name>Sungaibetung</name>
+  
+ <sym>Ibukota Kecamatan</sym>
+</wpt>
+<wpt lat="1.32" lon="109.91">
+ <ele>0</ele>
+ <name>Jagoibabang</name>
+  
+ <sym>Ibukota Kecamatan</sym>
+</wpt>
+<wpt lat="0.79" lon="109.57">
+ <ele>0</ele>
+ <name>Bana</name>
+  
+ <sym>Ibukota Kecamatan</sym>
+</wpt>
+<wpt lat="1.26" lon="109.84">
+ <ele>0</ele>
+ <name>Seluas</name>
+  
+ <sym>Ibukota Kecamatan</sym>
+</wpt>
+<wpt lat="1.23" lon="109.94">
+ <ele>0</ele>
+ <name>Lhibuei</name>
+  
+ <sym>Ibukota Kecamatan</sym>
+</wpt>
+<wpt lat="0.83" lon="109.49">
+ <ele>0</ele>
+ <name>Sebalo</name>
+  
+ <sym>Ibukota Kecamatan</sym>
+</wpt>
+<wpt lat="0.88" lon="109.29">
+ <ele>0</ele>
+ <name>Papanuduk</name>
+  
+ <sym>Ibukota Kecamatan</sym>
+</wpt>
+<wpt lat="1.05" lon="109.59">
+ <ele>0</ele>
+ <name>Semangat</name>
+  
+ <sym>Ibukota Kecamatan</sym>
+</wpt>
+<wpt lat="1.09" lon="109.74">
+ <ele>0</ele>
+ <name>Sinartebudak</name>
+  '
+ <sym>Ibukota Kecamatan</sym>
+</wpt>
+ <extensions>
+ </extensions>  
+</gpx>
